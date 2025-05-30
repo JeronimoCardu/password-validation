@@ -29,14 +29,16 @@ export default function App() {
           <div className="flex flex-col gap-1 text-white">
             <h1 className="text-3xl">Validate password</h1>
             <p className="text-xl text-gray-300">Your password must...</p>
-            {validations.map((v, idx) => (
-              <li
-                key={idx}
-                className={`${value != "" && !v.validate ? "text-red-400" : "text-gray-300"} ${v.validate && "text-green-300"} ml-2 list-disc`}
-              >
-                {v.text}
-              </li>
-            ))}
+            <ul>
+              {validations.map((v, idx) => (
+                <li
+                  key={idx}
+                  className={`${value != "" && !v.validate ? "text-red-400" : "text-gray-300"} ${v.validate && "text-green-300"} ml-2 list-disc`}
+                >
+                  {v.text}
+                </li>
+              ))}
+            </ul>
           </div>
           <Input
             setCorrectPassword={setCorrectPassword}
