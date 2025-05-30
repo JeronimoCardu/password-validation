@@ -13,5 +13,5 @@
 
 ## Screenshots
 
-- ![Desktop Screenshot](password-validation/public/images/screenshot-desktop.png)
-- ![Mobile Screenshot](password-validation/public/images/screenshot-mobile.png)
+- ![Desktop Screenshot](./src/assets/images/screenshot-desktop.png)
+- ![Mobile Screenshot](./src/assets/images/screenshot-mobile.png)
